@@ -11,3 +11,5 @@ Entry line:
 > The committee that regulates the internet cannot convert a PDF, yet it will decide what your AI is allowed to say about it.
 
 Run it with: `node main.ts`
+
+Gate: one sentence of 1 to 320 characters.

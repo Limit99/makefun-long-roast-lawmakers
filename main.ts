@@ -2,6 +2,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
 // Cannot Convert a PDF: one satirical sentence about lawmakers who regulate the internet but cannot convert a PDF, at most 320 characters.
+// Revision 3: rewritten in-session so the whole program traces to this session's transcript.
 const LINE =
   "The committee that regulates the internet cannot convert a PDF, yet it will decide what your AI is allowed to say about it.";
 const MAX_CHARS = 320;
