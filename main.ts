@@ -19,6 +19,10 @@ function main(): void {
   if (sentences.length !== 1) {
     throw new Error(`entry must be exactly one sentence, found ${sentences.length}`);
   }
+  // Revision 2: the single sentence ends with a full stop — reject a line that trails off.
+  if (!LINE.endsWith(".")) {
+    throw new Error("entry must end with a full stop");
+  }
   const outDir = process.env.OUTPUT_DIR ?? "/output";
   const outPath = join(outDir, "entry.txt");
   mkdirSync(dirname(outPath), { recursive: true });
